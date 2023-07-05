@@ -10,7 +10,7 @@ const convertImageToWebP = (req, res, next) => {
   const allowedFormats = ['jpg', 'jpeg', 'png'];
   const inputPath = req.file.path; // Chemin d'entrée du fichier
   const outputPath = req.file.path + ".webp"; // Chemin de sortie du fichier
-  const fileExtension = inputPath.split('.').pop().toLowerCase();
+  const fileExtension = inputPath.split('.').pop().toLowerCase(); // Récupération de l'extension du fichier. pop extrait le dernier élément du tableau
 
   if (!allowedFormats.includes(fileExtension)) {
     // Format de fichier non pris en charge

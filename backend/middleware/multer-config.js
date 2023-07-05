@@ -1,4 +1,4 @@
-const multer = require("multer"); // On impoirte multer pour pouvoir l'utiliser
+const multer = require("multer"); 
 
 const MIME_TYPES = {
   "image/jpg": "jpg",
